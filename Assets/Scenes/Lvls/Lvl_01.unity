@@ -305,20 +305,36 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4603073312566987034, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0773ae55c9557234386e5e813627bc17, type: 2}
     - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_ActionId
       value: 076e0623-c6d6-44a1-af7c-2ea942b6e3ab
       objectReference: {fileID: 0}
     - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionId
+      value: 0f1398b1-d164-4add-8a93-fcedb05ea9a7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_ActionName
       value: PlayerGroundMovement/LookArround[/Mouse/delta]
       objectReference: {fileID: 0}
     - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_ActionName
+      value: PlayerGroundMovement/Shoot[/Mouse/leftButton]
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
@@ -326,7 +342,15 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1233842046}
+    - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1233842046}
     - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
@@ -334,15 +358,31 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: IALookArround
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: IAShoot
       objectReference: {fileID: 0}
     - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PlayerMovement, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerMovement, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5337629344989314010, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
+      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5369404988439253186, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
@@ -390,6 +430,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7041948189742510136, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 561914208443354872, guid: 512a6326ec456ff43904b14423c3975e, type: 3}
+    - target: {fileID: 7041948189742510136, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
       propertyPath: rbBody
       value: 
       objectReference: {fileID: 0}
@@ -397,6 +441,10 @@ PrefabInstance:
       propertyPath: lookspeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7041948189742510136, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
+      propertyPath: BulletPrefab
+      value: 
+      objectReference: {fileID: 561914208443354872, guid: 512a6326ec456ff43904b14423c3975e, type: 3}
     - target: {fileID: 7041948189742510136, guid: b57abb2f4acb9244cb2d859b48729717, type: 3}
       propertyPath: frameDistance
       value: 50
@@ -741,7 +789,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 595d83219a342ac43b38c07925ba6abf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
