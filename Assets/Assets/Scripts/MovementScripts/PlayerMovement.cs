@@ -8,14 +8,23 @@ public class PlayerMovement : MonoBehaviour
 
     
     Vector2 movementValues = Vector2.zero;
+    Vector2 lookingValues = Vector2.zero;
     //public float forceAmount = 1f;
     public float frameDistance = 5f;
     //public float _mass = 20;
     //public Rigidbody rbBody;
+    public float lookspeed = 1f;
     public void IAAccelerate(InputAction.CallbackContext context)
     {
         movementValues = context.ReadValue<Vector2>();
         
+    }
+    public void IALookArround(InputAction.CallbackContext context)
+    {
+        lookingValues = context.ReadValue<Vector2>();
+        Debug.Log(lookingValues);
+
+        transform.Rotate(transform.up, lookingValues.x * Time.deltaTime * lookspeed);
     }
 
     // Start is called before the first frame update
