@@ -6,6 +6,7 @@ using UnityEngine;
 public class EnemyBase : MonoBehaviour
 {
     // Start is called before the first frame update
+    private float distanceToplayer;
     public float enemySpeed;
     public float enemyCurrentHealth;
     public float enemyDamage;
@@ -20,6 +21,9 @@ public class EnemyBase : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        distanceToplayer = Vector3.Distance(transform.position, enemyTarget.position);
+
+        transform.position = transform.position + (transform.forward * enemySpeed * Time.deltaTime);
         //calculate the direction from the chr to the target
         Vector3 direction = enemyTarget.position - transform.position;
         // cal the rotation needed to look in the direcion
