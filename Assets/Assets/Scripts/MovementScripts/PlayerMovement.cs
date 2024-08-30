@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float frameDistance = 5f;
     //public float _mass = 20;
     //public Rigidbody rbBody;
-    public float lookspeed = 1f;
+    public float lookspeed = 2f;
     
     public void IAAccelerate(InputAction.CallbackContext context)
     {
@@ -30,7 +30,10 @@ public class PlayerMovement : MonoBehaviour
     }
     public void IAShoot(InputAction.CallbackContext context)
     {
-        Shoot();
+        if (context.started == true)
+        {
+            Shoot();
+        }
     }
     // Start is called before the first frame update
     void Start()
@@ -48,7 +51,10 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Shoot()
     {
-        Instantiate(BulletPrefab, transform.position + transform.forward, Quaternion.identity);
+        GameObject spawnedBullet;
+        Vector3 direction = (transform.forward * 100f) - transform.position;
+        spawnedBullet = Instantiate(BulletPrefab, transform.position + transform.forward, Quaternion.identity);
+        spawnedBullet.GetComponent<BaseBullet>().SetBulletDirection(direction);
     }
    
 }
