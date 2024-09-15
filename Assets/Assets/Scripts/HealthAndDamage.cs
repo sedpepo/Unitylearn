@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class HealthAndDamage : MonoBehaviour
 {
-    public float health = 100;
-    public float damage = 10;
+    public float health = 100f;
+    public float maxHealth = 100f;
+    public float damage = 10f;
+
+    public delegate void DamageTaken(float Damagetaken);
 
     public void AcceptDamage(float incomingDamage)
     {
