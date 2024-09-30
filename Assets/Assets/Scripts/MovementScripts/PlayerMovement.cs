@@ -15,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     //public float _mass = 20;
     //public Rigidbody rbBody;
     public float lookspeed = 2f;
+    public static PlayerMovement instance;
+    public int xp;
     
     public void IAAccelerate(InputAction.CallbackContext context)
     {

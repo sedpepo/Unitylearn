@@ -14,9 +14,9 @@ public class ET1_Attack : MonoBehaviour
     
     void Update()
     {
-        if (baseEnemyScript.distanceToPlayer < 0.3f)
-        {
-            baseEnemyScript.targetPlayer.GetComponent<HealthAndDamage>().AcceptDamage();
-        }
+       // if (baseEnemyScript.distanceToPlayer < 0.3f)
+      //  {
+      //      baseEnemyScript.targetPlayer.GetComponent<HealthAndDamage>().AcceptDamage();
+      //  }
     }
 }
